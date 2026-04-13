@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zivara Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Zivara</div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner" id="home">
+    <h1>Welcome to Zivara Jewellery</h1>
+    <p>Premium Anti-Tarnish Jewellery | All India Delivery 🚚</p>
+    <button onclick="openWhatsApp()">Order on WhatsApp</button>
+  </div>
+
+  <!-- Products -->
+  <h2 class="section-title" id="products">Our Products</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Bracelet">
+      <h3>Bracelet</h3>
+      <p>Price: ₹199</p>
+      <button onclick="orderProduct('Bracelet')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Chain">
+      <h3>Chain</h3>
+      <p>Price: ₹299</p>
+      <button onclick="orderProduct('Chain')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Ring">
+      <h3>Ring</h3>
+      <p>Price: ₹149</p>
+      <button onclick="orderProduct('Ring')">Order Now</button>
+    </div>
+
+  </div>
+
+  <!-- About -->
+  <h2 class="section-title" id="about">About Zivara</h2>
+
+  <div class="about">
+    <p>
+      Zivara is a premium jewellery brand offering Anti-Tarnish collections.
+      We provide high-quality bracelets, chains, rings and more.
+      <br><br>
+      📦 All India Delivery Available <br>
+      💎 Premium Quality | Affordable Price <br>
+      📩 Order via WhatsApp / Instagram DM
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <h2 class="section-title" id="contact">Contact Us</h2>
+
+  <div class="contact">
+    <h2>Send Message</h2>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="number" id="phone" placeholder="Enter your phone number" required>
+      <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2026 Zivara Jewellery | All Rights Reserved
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp" href="https://wa.me/919999999999" target="_blank">
+    WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
